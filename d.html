@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--<h1>Hello World???</h1>-->
+<!--<p>I'm hosted with GitHub Pages.</p>-->
+<!--<div>-->
+<!--<canvas id="viewport" width="300" height="300" style="border:1px solid #000000;"></canvas>-->
+<!--</div>-->
+<!--<div>-->
+<!--<canvas id="viewport2" width="300" height="300" style="border:1px solid #000000;"></canvas>-->
+<!--</div>-->
+
+<script type="text/javascript" src="phaser.min.js"></script>
+<script>
+    var game = new Phaser.Game(800, 640, Phaser.CANVAS, '', {preload:preload, create:create, update:update} );
+    var groundGraphics;
+    var ground;
+    var ground2;
+    var sprite;
+    var clicking = false;
+    var spriteMaterial;
+    var hearts;
+    var colors = ['0xf87373', '0xfc9ece', '0x12bbf0', '0xd4ac0d', '0xb177e2', '0xfa6607', '0xaadddd', '0x42b48e'];
+    function preload() {
+
+    }
+
+    var mkHeart = function(game, x, y) {
+        var graphics = game.add.graphics(0, 0);
+
+        graphics.beginFill(colors[Math.floor((Math.random() * 8))]);
+        graphics.lineWidth = 0;
+        graphics.moveTo(0, 0);
+        var ar = [];
+        var val = 0;
+        for (var i = 0; i < 23; i++) {
+            val += 0.3;
+            var xp = 16 * Math.sin(val) * Math.sin(val) * Math.sin(val);
+            var yp1 = 13 * Math.cos(val);
+            var yp2 = 5 * Math.cos(2 * val);
+            var yp3 = 2 * Math.cos(3 * val);
+            var yp4 = Math.cos(4 * val);
+            var yp = yp1 - yp2 - yp3 - yp4;
+
+            var xVal = xp;
+            var yVal = yp;
+
+            ar.push([xVal, yVal]);
+            graphics.lineTo(xVal, yVal);
+        }
+
+        graphics.boundsPadding = 0;
+        graphics.endFill();
+
+        var myPolygon = game.add.sprite(x, y, graphics.generateTexture(1, 0, 0));
+        graphics.destroy();
+
+        game.physics.p2.enable(myPolygon, false);
+        myPolygon.body.setCircle(15, 0, 0);
+        myPolygon.body.restitution = 1;
+
+        myPolygon.body.rotation = Math.PI;
+        myPolygon.anchor.setTo(0.5, 0.6);
+        myPolygon.body.setMaterial(spriteMaterial);
+
+
+
+//        myPolygon.body.clearShapes();
+
+//        myPolygon.body.addPolygon({}, myPolygonArray);
+
+
+    };
+
+    function create() {
+        game.physics.startSystem(Phaser.Physics.P2JS);
+        game.physics.p2.gravity.y = 1400;
+
+
+
+//        groundGraphics = game.add.bitmapData(1000, 25);
+//        groundGraphics.ctx.beginPath();
+//        groundGraphics.ctx.rect(0, 0, 1000, 25);
+//        groundGraphics.ctx.rotate(100);
+//        groundGraphics.ctx.fillStyle = '#fa1100';
+//        groundGraphics.ctx.fill();
+//
+//        ground = game.add.sprite(0, 100, groundGraphics);
+//        game.physics.p2.enable(ground);
+//        ground.body.rotation = 0.6;
+//        ground.body.static = true;
+//
+//        ground2 = game.add.sprite(500, 400, groundGraphics);
+//        game.physics.p2.enable(ground2);
+//        ground2.body.rotation = -0.6;
+//        ground2.body.static = true;
+
+        var worldMaterial = game.physics.p2.createMaterial('worldMaterial');
+        spriteMaterial = game.physics.p2.createMaterial('spriteMaterial');
+
+        //  4 trues = the 4 faces of the world in left, right, top, bottom order
+        game.physics.p2.setWorldMaterial(worldMaterial, true, true, true, true);
+
+        var contactMaterial = game.physics.p2.createContactMaterial(spriteMaterial, worldMaterial);
+
+        contactMaterial.friction = 0.0;     // Friction to use in the contact of these two materials.
+        contactMaterial.restitution = .9;  // Restitution (i.e. how bouncy it is!) to use in the contact of these two materials.
+        contactMaterial.stiffness = 1e7;    // Stiffness of the resulting ContactEquation that this ContactMaterial generate.
+        contactMaterial.relaxation = 3;     // Relaxation of the resulting ContactEquation that this ContactMaterial generate.
+        contactMaterial.frictionStiffness = 1e7;    // Stiffness of the resulting FrictionEquation that this ContactMaterial generate.
+        contactMaterial.frictionRelaxation = 3;     // Relaxation of the resulting FrictionEquation that this ContactMaterial generate.
+        contactMaterial.surfaceVelocity = 0;
+
+        var contactMaterial2 = game.physics.p2.createContactMaterial(spriteMaterial, spriteMaterial);
+
+        contactMaterial2.friction = 0.0;     // Friction to use in the contact of these two materials.
+        contactMaterial2.restitution = .9;  // Restitution (i.e. how bouncy it is!) to use in the contact of these two materials.
+        contactMaterial2.stiffness = 1e7;    // Stiffness of the resulting ContactEquation that this ContactMaterial generate.
+        contactMaterial2.relaxation = 3;     // Relaxation of the resulting ContactEquation that this ContactMaterial generate.
+        contactMaterial2.frictionStiffness = 1e7;    // Stiffness of the resulting FrictionEquation that this ContactMaterial generate.
+        contactMaterial2.frictionRelaxation = 3;     // Relaxation of the resulting FrictionEquation that this ContactMaterial generate.
+        contactMaterial2.surfaceVelocity = 0;
+    }
+
+    function update() {
+        if (game.input.mousePointer.isDown) {
+            if (! clicking) {
+                clicking = true;
+                //  400 is the speed it will move towards the mouse
+                for (var i = 0; i < 20; i++) {
+                    mkHeart(game, game.input.x + Math.random() * 20, game.input.y + Math.random() * 20);
+                }
+            }
+        }
+
+        if (game.input.mousePointer.isUp) {
+            clicking = false;
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
