@@ -59,7 +59,7 @@
             for (var cols = 0; cols < nCol; cols++) {
                 if (ix < N) {
                     var u = ix * 21.0 * Math.PI / N;
-                    var r = Math.sin(((1 + rows) / (cols)) * u);
+                    var r = Math.cos(((1 + rows) / (cols)) * u);
 
                     if (ix > 1) {
                         graphics.lineStyle(2, colors[2], 1);
