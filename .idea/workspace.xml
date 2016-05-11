@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="403d780f-ea78-4e74-a4ae-f3665deec2d7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flowers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleFlower.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sinFlowers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chrysanthemum.html" afterPath="$PROJECT_DIR$/chrysanthemum.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/squares.html" afterPath="$PROJECT_DIR$/squares.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/d.html" afterPath="$PROJECT_DIR$/d.html" />
     </list>
     <ignored path="gpistre.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,17 +32,47 @@
         <entry file="file://$PROJECT_DIR$/d.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
-              <caret line="52" column="27" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="27" />
+              <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chrysanthemum.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chrysanthemum.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chrysanthemum.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simpleFlower.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleFlower.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="44" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flowers.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flowers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sinFlowers.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sinFlowers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -70,7 +104,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/squares.html" />
+        <option value="$PROJECT_DIR$/d.html" />
+        <option value="$PROJECT_DIR$/simpleFlower.html" />
         <option value="$PROJECT_DIR$/chrysanthemum.html" />
+        <option value="$PROJECT_DIR$/sinFlowers.html" />
+        <option value="$PROJECT_DIR$/flowers.html" />
       </list>
     </option>
   </component>
@@ -139,11 +177,20 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.chrysanthemum.html">
+  <component name="RunManager" selected="JavaScript Debug.flowers.html">
     <configuration default="false" name="d.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/d.html">
       <method />
     </configuration>
     <configuration default="false" name="chrysanthemum.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/chrysanthemum.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="simpleFlower.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/simpleFlower.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="flowers.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/flowers.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="sinFlowers.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/sinFlowers.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -193,14 +240,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.d.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.chrysanthemum.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.simpleFlower.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.flowers.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.sinFlowers.html" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.chrysanthemum.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.d.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.flowers.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.sinFlowers.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.simpleFlower.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.chrysanthemum.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.d.html" />
       </list>
     </recent_temporary>
   </component>
@@ -214,12 +267,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1462932852419</updated>
-      <workItem from="1462932853579" duration="2771000" />
+      <workItem from="1462932853579" duration="8668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2771000" />
+    <option name="totallyTimeSpent" value="8668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="842" extended-state="6" />
@@ -262,7 +315,15 @@
     <entry file="file://$PROJECT_DIR$/d.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
-          <caret line="52" column="27" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="27" />
+          <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleFlower.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="44" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -270,7 +331,23 @@
     <entry file="file://$PROJECT_DIR$/chrysanthemum.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinFlowers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flowers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
           <folding />
         </state>
       </provider>

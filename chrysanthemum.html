@@ -9,8 +9,11 @@
     var x = 4;
     var y = 3;
     var graphics;
+    var point;
+    var scale = 25;
 
     var colors = ['0xf87373', '0xfc9ece', '0x12bbf0', '0xd4ac0d', '0xb177e2', '0xfa6607', '0xaadddd', '0x42b48e'];
+
     function preload() {
 
     }
@@ -21,32 +24,44 @@
 
     }
 
-    function update() {
+    var distanceToCenter = function(x, y) {
+        return Math.sqrt(Math.pow(x * scale, 2) + Math.pow(y * scale, 2));
+    };
 
+    function update() {
         ix = ix + 1;
 
         if (ix < N) {
+            var power = 0.5;
+            var dist = Math.round(Math.pow(distanceToCenter(x, y), power));
+            console.log("x: " + Math.round(x * scale) + " y: " + Math.round(y * scale) + " dist: " + dist);
+            var c = Phaser.Color.interpolateColor(colors[2], colors[0], Math.pow(260, power), dist);
+
             var u = ix * 21.0 * Math.PI / N;
             var p4 = Math.sin(17 * u / 3);
             var p8 = Math.sin(2 * Math.cos(3 * u) - 28 * u);
             var r = 5 * (1 + Math.sin(11 * u / 5)) - 4 * p4 * p4 * p4 * p4 * p8 * p8 * p8 * p8 * p8 * p8 * p8 * p8;
 
-
-
             if (ix > 1) {
-                graphics.lineStyle(1, colors[2], 1);
-//                graphics.beginFill(colors[2], 0.5);
-                graphics.moveTo(400 + x * 20, 320 + y * 20);
+//                point.destroy();
+                graphics.lineStyle(2, c, 1);
+                graphics.moveTo(400 + x * scale, 320 + y * scale);
             }
 
             x = r * Math.cos(u);
             y = r * Math.sin(u);
 
+
+
             if (ix > 1) {
-                graphics.lineTo(400 + x * 20, 320 + y * 20);
-//                graphics.endFill();
+                graphics.lineTo(400 + x * scale, 320 + y * scale);
+//                point.beginFill(colors[1], 0.5);
+//                point.drawCircle(400 + x * 20, 320 + y * 20, 5);
+//                point.endFill();
             }
+
         } else {
+            graphics.endFill();
             game.destroy()
         }
 //        graphics.beginFill(colors[Math.floor((Math.random() * 8))]);

@@ -114,7 +114,7 @@
         var contactMaterial2 = game.physics.p2.createContactMaterial(spriteMaterial, spriteMaterial);
 
         contactMaterial2.friction = 0.3;     // Friction to use in the contact of these two materials.
-        contactMaterial2.restitution = 0.9;  // Restitution (i.e. how bouncy it is!) to use in the contact of these two materials.
+        contactMaterial2.restitution = 0.5;  // Restitution (i.e. how bouncy it is!) to use in the contact of these two materials.
         contactMaterial2.stiffness = 1e7;    // Stiffness of the resulting ContactEquation that this ContactMaterial generate.
         contactMaterial2.relaxation = 3;     // Relaxation of the resulting ContactEquation that this ContactMaterial generate.
         contactMaterial2.frictionStiffness = 1e7;    // Stiffness of the resulting FrictionEquation that this ContactMaterial generate.
