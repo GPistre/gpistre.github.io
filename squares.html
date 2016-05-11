@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="js/phaser.min.js"></script>
+<script>
+    var game = new Phaser.Game(800, 640, Phaser.CANVAS, '', {preload:preload, create:create, update:update} );
+
+    var colors = ['0xf87373', '0xfc9ece', '0x12bbf0', '0xd4ac0d', '0xb177e2', '0xfa6607', '0xaadddd', '0x42b48e'];
+    function preload() {
+
+    }
+
+
+    function create() {
+        game.physics.startSystem(Phaser.Physics.Arcade);
+
+    }
+
+    function update() {
+        var graphics = game.add.graphics(Math.random() * 800, Math.random() * 640);
+        graphics.beginFill(colors[Math.floor((Math.random() * 8))]);
+        graphics.lineWidth = 0;
+        graphics.moveTo(0, 0);
+        graphics.lineTo(50, 0);
+        graphics.lineTo(50, 50);
+        graphics.lineTo(0, 50);
+        graphics.endFill();
+
+    }
+
+</script>
+
+
+</body>
+</html>
