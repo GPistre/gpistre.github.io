@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<style>/* Stylesheet 1: */
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+#top {
+    border-radius: 4px;
+    margin: 4px;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 4em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#main {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1em;
+    padding: 10px;
+    /*margin: 0 210px;*/
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+.side {
+    display: inline-block;
+}
+
+#myCanvas {
+    width: 800px;
+    height: 640px;
+    /*margin-left: 300px;*/
+    /*margin-right: 300px;*/
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#d, #n{
+    margin: 15px;
+}
+
+#eqRes{
+    display:inline-block;
+}
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#headTitle {
+
+}
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+</style>
+
+<script type="text/javascript" src="js/phaser.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div id = "top"> The Equations of Nature </div>
+
+<div id = "main">
+    <p>
+        I’ve always been interested in graphics and design.
+        Because of my complete inability to draw, as well as
+        my general laziness towards learning how to, I’ve never
+        been able to achieve anything interesting on paper.
+        The use of computer graphics however, allowed me to use elegant
+        mathematical equations to create, if not realistic natural objects,
+        at least symbolic representations of those.
+    </p>
+
+    <p>
+        It all started when I wished to offer my girlfriend flowers.
+        I was looking for something more original, and perhaps more interactive and durable than regular flowers.
+        In order to obtain the variety and random character of nature, there needs to be a way to “generate”
+        the plants in a somewhat dynamic fashion.
+        As it happens, evolution has shaped the petals of flowers to grow in an almost mathematical way.
+        The lines drawn by variations of sinusoids plotted in polar coordinates easily end up looking like
+        the petals of simple flowers. Or at least our biased human brains make them look so.
+    </p>
+
+    <p>
+        In polar coordinates, a sinusoid will take the form:
+        <br>
+    <p>r  = k cos (theta)
+        <br>
+        <br>
+        r being the radius, theta the angle and k an arbitrary number which will have an influence on the shape of the curve.
+    </p>
+
+    <p>
+        If k = 1, then the curve will simply be a circle.
+        If k is an integer, then the curve will describe a
+        shape similar to petals, k if k is odd, and 2k if k
+        is even. Non-integer values will affect the shape in
+        more complex ways. In particular, if k is rational,
+        then the curve will eventually close itself. In the case
+        where is irrationnal, such as with the square root of two, or
+        pi, then the curve will continue indefinitely, without ever going back to meet its starting point.
+    </p>
+
+</div>
+
+<div class="center">
+    <div class="side">
+        <div id="d"></div>
+        <div id="n"></div>
+        Equation:
+        <br>
+        <div id="eqRes">
+            r = (3 / 1) * cos(theta)
+        </div>
+    </div>
+
+    <div class="side">
+        <canvas id="myCanvas" width="1600" height="1280"></canvas>
+    </div>
+</div>
+
+<script src="simpleFlowerScript.js"></script>
+
+</body>
+</html>

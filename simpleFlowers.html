@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<style>/* Stylesheet 1: */
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+#myCanvas {
+    width: 800px;
+    height: 640px;
+    /*float: right;*/
+    background-color: rgba(0, 0, 0, 1);
+}
+#d, #n{
+    margin: 15px;
+}
+
+</style>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<body>
+
+<canvas id="myCanvas" width="1600" height="1280"></canvas>
+
+<script>
+    var ix = 0;
+    var N = 1000;
+    var x = 4;
+    var y = 3;
+    var scale = 100;
+    var d = 3;
+    var n = 1;
+    var colors = ['0xf87373', '0xfc9ece', '0x12bbf0', '0xd4ac0d', '0xb177e2', '0xfa6607', '0xaadddd', '0x42b48e'];
+    var canvas = document.getElementById("myCanvas");
+//    var ctx;
+    var maxIx = 6000;
+    var rowSize = 100;
+    var colSize = 120;
+    var nCol = 2;
+    var nRow = 2;
+    var rowOffset = 50;
+    var colOffset = -50;
+    var xAr = [];
+    var yAr = [];
+
+    window.requestAnimFrame = (function(callback) {
+        return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function(callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+    })();
+
+    for (var rows = 0; rows < nRow; rows++) {
+        var colArX = [];
+        var colArY = [];
+
+        for (var cols = 0; cols < nCol; cols++) {
+            colArX.push(colOffset);
+            colArY.push(rowOffset);
+        }
+        xAr.push(colArX);
+        yAr.push(colArY);
+    }
+
+    function animate() {
+        ix = ix + 1;
+
+        for (var rows = 0; rows < nRow; rows++) {
+            var colArX = xAr[rows];
+            var colArY = yAr[rows];
+
+            for (var cols = 0; cols < nCol; cols++) {
+                var ctx = canvas.getContext("2d");
+                if (ix < maxIx) {
+                    console.log(ix);
+                    var u = ix * 21.0 * Math.PI / N;
+                    var r = Math.cos((d / n) * u);
+                    if (ix > 1) {
+                        ctx.strokeStyle = "#12bbf0";
+                        ctx.moveTo(colOffset + colArX[cols] * scale + cols * colSize,
+                                rowOffset + colArY[cols] * scale + rows * rowSize);
+                    } else {
+                        ctx.beginPath();
+                        ctx.lineWidth=5;
+                    }
+
+                    x = r * Math.cos(u);
+                    y = r * Math.sin(u);
+
+                    if (ix > 1) {
+                        ctx.lineTo(colOffset + colArX[cols] * scale + cols * colSize,
+                                rowOffset + colArY[cols] * scale + rows * rowSize);
+                        ctx.stroke();
+                    }
+                }
+                requestAnimFrame(function() {
+                    animate();
+                });
+            }
+        }
+    }
+    animate();
+</script>
+
+
+</body>
+</html>

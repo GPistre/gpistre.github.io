@@ -9,6 +9,7 @@
 
     #menu {
         width: 200px;
+        margin-top: 200px;
         float: left
     }
 
@@ -56,44 +57,44 @@
         var colors = ['0xf87373', '0xfc9ece', '0x12bbf0', '0xd4ac0d', '0xb177e2', '0xfa6607', '0xaadddd', '0x42b48e'];
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
+        var maxIx = 6000;
 
-        var refreshd = function(){
+        function refreshd(){
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             d = $("#d").slider( "value" );
             ix = 0;
             ctx = canvas.getContext("2d");
             document.getElementById("eqRes").innerHTML = "r = (" + d + " / " + n + ") * cos(theta)";
-        };
+        }
 
-        var refreshn = function(){
+        function refreshn(){
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             n = $("#n").slider( "value" );
             ix = 0;
             ctx = canvas.getContext("2d");
             document.getElementById("eqRes").innerHTML = "r = (" + d + " / " + n + ") * cos(theta)";
-        };
+        }
 
-        $(function() {
-            $("#d").slider({
-                orientation: "horizontal",
-                range: "min",
-                max: 10,
-                value: 3,
-                slide: refreshd,
-                change: refreshd
-            });
+        $("#d").slider({
+            orientation: "horizontal",
+            range: "min",
+            max: 15,
+            min: 1,
+            value: 3,
+            slide: refreshd,
+            change: refreshd
         });
 
-        $(function() {
-            $("#n").slider({
-                orientation: "horizontal",
-                range: "min",
-                max: 10,
-                value: 1,
-                slide: refreshn,
-                change: refreshn
-            });
+        $("#n").slider({
+            orientation: "horizontal",
+            range: "min",
+            max: 15,
+            min: 1,
+            value: 1,
+            slide: refreshn,
+            change: refreshn
         });
+
 
         window.requestAnimFrame = (function(callback) {
             return window.requestAnimationFrame ||
@@ -108,9 +109,10 @@
 
         function animate() {
             ix = ix + 1;
-            if (ix < N) {
+            if (ix < maxIx) {
                 var u = ix * 21.0 * Math.PI / N;
                 var r = Math.cos((d / n) * u);
+//                var r = Math.cos(Math.PI * u);
                 if (ix > 1) {
                     ctx.strokeStyle = "#12bbf0";
                     ctx.moveTo(800 + x * scale, 640 + y * scale);
