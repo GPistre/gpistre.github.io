@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="403d780f-ea78-4e74-a4ae-f3665deec2d7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simplerflower.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flowers.html" afterPath="$PROJECT_DIR$/flowers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleFlower.html" afterPath="$PROJECT_DIR$/simpleFlower.html" />
     </list>
     <ignored path="gpistre.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +39,8 @@
       <file leaf-file-name="chrysanthemum.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chrysanthemum.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -46,18 +49,28 @@
       <file leaf-file-name="simpleFlower.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleFlower.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="44" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="7" />
+            <state relative-caret-position="109">
+              <caret line="65" column="38" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="114" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flowers.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="simplerflower.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/simplerflower.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flowers.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flowers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+            <state relative-caret-position="15">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -100,10 +113,13 @@
       <list>
         <option value="$PROJECT_DIR$/squares.html" />
         <option value="$PROJECT_DIR$/d.html" />
-        <option value="$PROJECT_DIR$/simpleFlower.html" />
         <option value="$PROJECT_DIR$/chrysanthemum.html" />
         <option value="$PROJECT_DIR$/sinFlowers.html" />
         <option value="$PROJECT_DIR$/flowers.html" />
+        <option value="$PROJECT_DIR$/mathscribe/COPY-ME.html" />
+        <option value="$PROJECT_DIR$/cp.html" />
+        <option value="$PROJECT_DIR$/simpleFlower.html" />
+        <option value="$PROJECT_DIR$/simplerflower.html" />
       </list>
     </option>
   </component>
@@ -172,20 +188,20 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.flowers.html">
-    <configuration default="false" name="d.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/d.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="chrysanthemum.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/chrysanthemum.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.simplerflower.html">
     <configuration default="false" name="simpleFlower.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/simpleFlower.html">
       <method />
     </configuration>
     <configuration default="false" name="flowers.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/flowers.html">
       <method />
     </configuration>
-    <configuration default="false" name="sinFlowers.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/sinFlowers.html">
+    <configuration default="false" name="cp.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/cp.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="COPY-ME.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/mathscribe/COPY-ME.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="simplerflower.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/simplerflower.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -236,19 +252,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.d.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.chrysanthemum.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.simpleFlower.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.flowers.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.sinFlowers.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.simpleFlower.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.flowers.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.cp.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.COPY-ME.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.simplerflower.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.flowers.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.sinFlowers.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.simpleFlower.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.chrysanthemum.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.d.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.simplerflower.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.simpleFlower.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.cp.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.COPY-ME.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.flowers.html" />
       </list>
     </recent_temporary>
   </component>
@@ -262,18 +278,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1462932852419</updated>
-      <workItem from="1462932853579" duration="8737000" />
+      <workItem from="1462932853579" duration="22392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8737000" />
+    <option name="totallyTimeSpent" value="22392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="842" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -315,22 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleFlower.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="44" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chrysanthemum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sinFlowers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -341,8 +341,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flowers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+        <state relative-caret-position="15">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrysanthemum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mathscribe/COPY-ME.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleFlower.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="65" column="38" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simplerflower.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
           <folding />
         </state>
       </provider>
