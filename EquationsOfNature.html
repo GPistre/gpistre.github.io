@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<style>/* Stylesheet 1: */
+<style>
+
+eq{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+}
+
 body {
     font: 100% Lucida Sans, Verdana;
     margin: 20px;
     line-height: 26px;
+}
+.app {
+    /*display: inline-block;*/
+    align-items: center;
+    text-align: center;
 }
 
 #top {
@@ -15,45 +28,76 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-#main {
+#chrysCanvas {
+    width: 50%;
+    height: 40%;
+}
+
+.main {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 10px;
-    /*margin: 0 210px;*/
     margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: justify;
     text-indent: 50px;
 }
 
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 200px;
+#simpleFlowerCanvas {
+    width: 50%;
+    height: 40%;
+    /*background-color: rgba(0, 0, 0, 1);*/
 }
 
-.side {
+#flowerCanvas {
+    /*width: 50%;*/
+    /*height: 40%;*/
+    display : block;
+    margin : auto;
+
+}
+
+#chrysanthemumCanvas {
+    /*width: 40%;*/
+    /*height: 50%;*/
+    /*display: block;*/
+    margin : auto;
+    /*align-items: center;*/
+    /*text-align: center;*/
+    /*margin-left: 20%;*/
+    /*margin-right: 20%;*/
+    /*background-color: rgba(0, 0, 0, 1);*/
+}
+
+
+.sliders {
+    text-align: center;
+
+}
+
+.sliderTitles {
     display: inline-block;
+    margin: 5px;
+    width: 25%;
 }
 
-#myCanvas {
-    width: 800px;
-    height: 640px;
-    /*margin-left: 300px;*/
-    /*margin-right: 300px;*/
-    background-color: rgba(0, 0, 0, 1);
-}
-
-#d, #n{
+#d, #n {
+    display: inline-block;
     margin: 15px;
+    width: 25%;
 }
 
-#eqRes{
-    display:inline-block;
+.eq{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
 }
 
+#eqRes {
+    padding: 10px;
+}
 #bottom {
     border: 1px solid #d4d4d4;
     background-color: #f1f1f1;
@@ -77,77 +121,137 @@ body {
 <script type="text/javascript" src="js/phaser.min.js"></script>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="simpleFlowerScript.js"></script>
+<script type="text/javascript" src="makeFlowersScript.js"></script>
+<script src="chrysanthemumScript.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
+    <title>The Equations of Nature</title>
 </head>
 <body>
-<div id = "top"> The Equations of Nature </div>
+    <div id = "top"> The Equations of Nature </div>
 
-<div id = "main">
-    <p>
-        I’ve always been interested in graphics and design.
-        Because of my complete inability to draw, as well as
-        my general laziness towards learning how to, I’ve never
-        been able to achieve anything interesting on paper.
-        The use of computer graphics however, allowed me to use elegant
-        mathematical equations to create, if not realistic natural objects,
-        at least symbolic representations of those.
-    </p>
+    <div class="main">
+        <p>
+            I’ve always been interested in graphics and design.
+            Because of my complete inability to draw, as well as
+            my general laziness towards learning how to, I’ve never
+            been able to achieve anything interesting on paper.
+            The use of computer graphics however, allowed me to use elegant
+            mathematical equations to create, if not realistic natural objects,
+            at least symbolic representations of those.
+        </p>
 
-    <p>
-        It all started when I wished to offer my girlfriend flowers.
-        I was looking for something more original, and perhaps more interactive and durable than regular flowers.
-        In order to obtain the variety and random character of nature, there needs to be a way to “generate”
-        the plants in a somewhat dynamic fashion.
-        As it happens, evolution has shaped the petals of flowers to grow in an almost mathematical way.
-        The lines drawn by variations of sinusoids plotted in polar coordinates easily end up looking like
-        the petals of simple flowers. Or at least our biased human brains make them look so.
-    </p>
+        <p>
+            It all started when I wished to offer my girlfriend flowers.
+            I was looking for something more original, and perhaps more interactive and durable than regular flowers.
+            In order to obtain the variety and random character of nature, there needs to be a way to “generate”
+            the plants in a somewhat dynamic fashion.
+            As it happens, evolution has shaped the petals of flowers to grow in an almost mathematical way.
+            The lines drawn by variations of sinusoids plotted in polar coordinates easily end up looking like
+            the petals of simple flowers. Or at least our biased human brains make them look so.
+        </p>
 
-    <p>
-        In polar coordinates, a sinusoid will take the form:
-        <br>
-    <p>r  = k cos (theta)
-        <br>
-        <br>
-        r being the radius, theta the angle and k an arbitrary number which will have an influence on the shape of the curve.
-    </p>
+            In polar coordinates, a sinusoid will take the form:
+            <br>
+        <p class = eq>r  = k cos (&theta;)</p>
+            With r the radius, &theta; the angle and k an arbitrary number which will have an influence on the shape of the curve.
 
-    <p>
-        If k = 1, then the curve will simply be a circle.
-        If k is an integer, then the curve will describe a
-        shape similar to petals, k if k is odd, and 2k if k
-        is even. Non-integer values will affect the shape in
-        more complex ways. In particular, if k is rational,
-        then the curve will eventually close itself. In the case
-        where is irrationnal, such as with the square root of two, or
-        pi, then the curve will continue indefinitely, without ever going back to meet its starting point.
-    </p>
+        <p>
+            If k = 1, then the curve will simply be a circle.
+            If k is an integer, then the curve will describe a
+            shape similar to petals, k if k is odd, and 2k if k
+            is even. Non-integer values will affect the shape in
+            more complex ways. In particular, if k is rational,
+            then the curve will eventually close itself. In the case
+            where is irrational, such as with the square root of two, or
+            pi, then the curve will continue indefinitely, without ever going back to meet its starting point.
+        </p>
 
-</div>
+        <p>
+            Here you can play with variations on the equation. We define <eq> k = <sup> d </sup> &frasl; <sub> n </sub> </eq>,
+            with each slider changing the value of <eq>d</eq> and <eq>n</eq>. The curves produced here will all eventually
+            close as the <eq>k</eq> produced will all be rational. Have fun! (I like <eq><sup> 2 </sup> &frasl; <sub> 9 </sub> </eq>.)
+        </p>
+    </div>
 
-<div class="center">
-    <div class="side">
-        <div id="d"></div>
-        <div id="n"></div>
-        Equation:
-        <br>
-        <div id="eqRes">
-            r = (3 / 1) * cos(theta)
+    <div class="app">
+        <div class = "sliders">
+            <div class = sliderTitles>
+                <div class="eq">d</div>
+            </div>
+            <div class = sliderTitles>
+                <div class="eq">n</div>
+            </div>
         </div>
+        <div class = "sliders">
+            <div id="d"></div>
+            <div id="n"></div>
+        </div>
+        <div class="eq">
+            <div id = 'eqRes'>
+                r = <sup> 3 </sup> &frasl; <sub> 1 </sub>  cos(&theta;)
+            </div>
+        </div>
+        <canvas id="simpleFlowerCanvas" width="1080" height="640"></canvas>
     </div>
 
-    <div class="side">
-        <canvas id="myCanvas" width="1600" height="1280"></canvas>
+    <div class="main">
+        <p>
+            While those curves provides some satisfying shapes, they remain very simple.
+            But it is also possible to combine them, to create more complicated shapes.
+            A mathematician, Temple H. Fay, came up with a rather complicated equation
+            that draws a curve which more closely resembles a real flower.
+            <br>
+            <p><eq>r = 5 ( 1 + sin( <sup>11 u</sup> &frasl; <sub>5</sub> ) ) -
+                4 sin<sup>4</sup>( <sup>17 u</sup> &frasl; <sub>3</sub> )
+                sin<sup>8</sup>( 2 cos( 3 u ) - 28 u )</eq>
+            </p>
+        </p>
     </div>
-</div>
 
-<script src="simpleFlowerScript.js"></script>
+    <div class="app">
+        <canvas id="chrysCanvas" width="1080" height="640"></canvas>
+        <script src="chrysanthemum2.js"></script>
+        <script>
+            chrysanthemum();
+        </script>
+    </div>
+
+    <script>
+        simpleFlower();
+        chrysanthemum();
+    </script>
+
+    <div class="main">
+        <p>
+            Here, by making the color a function of the distance to the center,
+            (actually, the square root of the distance) we can make the flower even more "life-like."
+        </p>
+        <br>
+        <p>
+            Finally, we can put all of these together to generate flowers of all shapes and colors at will.
+        </p>
+    </div>
+
+    <div class="app">
+        <div id="flowerCanvas"></div>
+        <script>
+            makeFlowers();
+//            var started = false;
+//            document.getElementById('flowerCanvas').addEventListener('click', function() {
+//                console.log(started);
+//                if (!started) {
+//                    console.log(started);
+//
+//                    started = true;
+//                }
+//            });
+        </script>
+    </div>
 
 </body>
 </html>

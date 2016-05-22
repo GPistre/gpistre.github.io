@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html>
-<body>
-<script type="text/javascript" src="js/phaser.min.js"></script>
-<script>
-    var game = new Phaser.Game(800, 640, Phaser.CANVAS, '', {preload:preload, create:create, update:update});
+function chrysanthemum() {
+    var height = 600;
+    var width = 400;
+    var game = new Phaser.Game(height, width, Phaser.CANVAS, 'chrysanthemumCanvas', {create:create, update:update});
     var ix = 0;
     var N = 4000;
     var x = 4;
     var y = 3;
     var graphics;
-    var point;
-    var scale = 25;
+    var scale = 20;
 
     var colors = ['0xf87373', '0xfc9ece', '0x12bbf0', '0xd4ac0d', '0xb177e2', '0xfa6607', '0xaadddd', '0x42b48e'];
 
-    function preload() {
-
-    }
-
     function create() {
         game.stage.backgroundColor = '#ffffff';
+        game.scale.pageAlignHorizontally = true;
+        game.scale.maxWidth = 600;
+        game.scale.maxHeight = 400;
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        game.scale.setScreenSize();
+        game.scale.refresh();
         game.physics.startSystem(Phaser.Physics.Arcade);
         graphics = game.add.graphics(0, 0);
 
@@ -31,11 +30,9 @@
 
     function update() {
         ix = ix + 1;
-        console.log(ix);
         if (ix < 1900) {
             var power = 0.5;
             var dist = Math.round(Math.pow(distanceToCenter(x, y), power));
-            console.log("x: " + Math.round(x * scale) + " y: " + Math.round(y * scale) + " dist: " + dist);
             var c = Phaser.Color.interpolateColor(colors[2], colors[0], Math.pow(260, power), dist);
 
             var u = ix * 21.0 * Math.PI / N;
@@ -45,14 +42,14 @@
 
             if (ix > 1) {
                 graphics.lineStyle(.5, c, 1);
-                graphics.moveTo(400 + x * scale, 320 + y * scale);
+                graphics.moveTo(height / 2 + x * scale, width / 2 + y * scale);
             }
 
             x = r * Math.cos(u);
             y = r * Math.sin(u);
 
             if (ix > 1) {
-                graphics.lineTo(400 + x * scale, 320 + y * scale);
+                graphics.lineTo(height / 2 + x * scale, width / 2 + y * scale);
             }
 
         } else {
@@ -60,9 +57,4 @@
             game.destroy()
         }
     }
-
-</script>
-
-
-</body>
-</html>
+}
