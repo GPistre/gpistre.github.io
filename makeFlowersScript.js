@@ -26,7 +26,6 @@ function makeFlowers() {
         game.scale.refresh();
 
 
-        console.log('started');
         for (var i = 0; i < 4; i++) {
             flowers.push('chrys');
         }
@@ -46,7 +45,6 @@ function makeFlowers() {
 
     function animate(flower, ix) {
         if (ix == 1) {
-            // console.log("???");
             flower.scale.setTo(ix / 10, ix / 10);
             requestAnimFrame(function() {
                 animate(flower, ix + 1);
@@ -62,7 +60,6 @@ function makeFlowers() {
 
     function update() {
         if (game.input.mousePointer.isDown) {
-            console.log(game.input.x);
             if (! clicking) {
                 clicking = true;
                 var randomFlower = flowers[Math.floor((Math.random() * flowers.length))];
