@@ -1,0 +1,47 @@
+body {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+
+a {
+	text-decoration: none;
+	color:black;
+}
+
+a:active{
+	color:red;
+	text-decoration:underline;
+}
+a:hover{
+	color:blue;
+}
+
+.nav {
+width:100%;
+}
+
+.nav a{
+	float:right;
+	margin:10 40 20 0;
+	display:inline;
+	text-align:center;
+}
+.nav h3{
+	margin:40 0 0 40;
+	font-family:serif;
+}
+
+.row {
+	margin-top:200px;
+	margin-left:40px;
+	margin-right:40px;
+	width:100%;
+}
+
+.col-3 {
+	width:33%;
+	float:left;
+	margin:auto;
+	text-align:center;
+}
+

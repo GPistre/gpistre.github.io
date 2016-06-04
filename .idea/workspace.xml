@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="403d780f-ea78-4e74-a4ae-f3665deec2d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beijing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kmViz.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquationsOfNature.html" afterPath="$PROJECT_DIR$/EquationsOfNature.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeaTravel.html" afterPath="$PROJECT_DIR$/SeaTravel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="gpistre.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,6 +77,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SeaTravel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SeaTravel.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Beijing.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Beijing.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beijing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="479" column="125" selection-start-line="479" selection-start-column="125" selection-end-line="479" selection-end-column="125" />
+            <state relative-caret-position="241">
+              <caret line="463" column="7" selection-start-line="463" selection-start-column="7" selection-end-line="463" selection-end-column="7" />
               <folding>
                 <element signature="e#285#382#0" expanded="false" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -188,6 +194,7 @@
         <option value="$PROJECT_DIR$/kmViz.html" />
         <option value="$PROJECT_DIR$/seaTravelGraphs/Beijing.html" />
         <option value="$PROJECT_DIR$/Beijing.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -264,20 +271,20 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Beijing.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="EquationsOfNature.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/EquationsOfNature.html">
       <method />
     </configuration>
     <configuration default="false" name="SeaTravel.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/SeaTravel.html">
       <method />
     </configuration>
-    <configuration default="false" name="chrysanthemum.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/chrysanthemum.html">
-      <method />
-    </configuration>
     <configuration default="false" name="kmViz.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/kmViz.html">
       <method />
     </configuration>
     <configuration default="false" name="Beijing.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/Beijing.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/gpistre.github.io/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -336,17 +343,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.EquationsOfNature.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.SeaTravel.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.chrysanthemum.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.kmViz.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Beijing.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.kmViz.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Beijing.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Beijing.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.kmViz.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.EquationsOfNature.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.SeaTravel.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.chrysanthemum.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Beijing.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.kmViz.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.EquationsOfNature.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.SeaTravel.html" />
       </list>
     </recent_temporary>
   </component>
@@ -372,12 +379,12 @@
       <workItem from="1463901393714" duration="5000" />
       <workItem from="1463901407384" duration="1511000" />
       <workItem from="1464217832096" duration="32955000" />
-      <workItem from="1464831189289" duration="7163000" />
+      <workItem from="1464831189289" duration="9448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100388000" />
+    <option name="totallyTimeSpent" value="102673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="842" extended-state="6" />
@@ -419,13 +426,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/simpleFlowerScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/makeFlowers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -440,6 +440,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="e#1072#1418#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -512,6 +515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -519,6 +523,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -526,6 +531,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!block;n#refreshn#0;n#!!block;n#simpleFlower#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -543,6 +551,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding>
+            <element signature="e#1072#1418#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -615,6 +626,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -622,6 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -629,6 +642,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!block;n#refreshn#0;n#!!block;n#simpleFlower#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -741,6 +757,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!block;n#refreshn#0;n#!!block;n#simpleFlower#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -748,6 +767,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -755,6 +775,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -776,6 +797,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+          <folding>
+            <element signature="e#1072#1418#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -833,25 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EquationsOfNature.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding>
-            <element signature="e#1499#1527#0" expanded="false" />
-            <element signature="e#1543#1606#0" expanded="false" />
-            <element signature="e#1615#1679#0" expanded="false" />
-            <element signature="e#1684#1806#0" expanded="false" />
-            <element signature="e#1815#1837#0" expanded="false" />
-            <element signature="e#1846#1997#0" expanded="false" />
-            <element signature="e#2010#2014#0" expanded="false" />
-            <element signature="e#2043#2077#0" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -897,10 +902,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EquationsOfNature.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="e#1499#1527#0" expanded="false" />
+            <element signature="e#1543#1606#0" expanded="false" />
+            <element signature="e#1615#1679#0" expanded="false" />
+            <element signature="e#1684#1806#0" expanded="false" />
+            <element signature="e#1815#1837#0" expanded="false" />
+            <element signature="e#1846#1997#0" expanded="false" />
+            <element signature="e#2010#2014#0" expanded="false" />
+            <element signature="e#2043#2077#0" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Beijing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="479" column="125" selection-start-line="479" selection-start-column="125" selection-end-line="479" selection-end-column="125" />
+        <state relative-caret-position="241">
+          <caret line="463" column="7" selection-start-line="463" selection-start-column="7" selection-end-line="463" selection-end-column="7" />
           <folding>
             <element signature="e#285#382#0" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -917,6 +941,14 @@
             <element signature="n#style#0;n#img#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

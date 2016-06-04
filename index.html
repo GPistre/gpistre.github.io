@@ -1,74 +1,99 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World???</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<script src="src/physicsjs/dist/physicsjs-full.js"></script>
-<script >
-    Physics(function(world){
 
-        var viewWidth = 640;
-        var viewHeight = 4080;
-        var renderer = Physics.renderer('canvas', {
-            el: 'viewport',
-            width: viewWidth,
-            height: viewHeight,
-            meta: true, // don't display meta data
-            styles: {
-                // set colors for the circle bodies
-                'circle' : {
-                    strokeStyle: '#351024',
-                    lineWidth: 1,
-                    fillStyle: '#d33682',
-                    angleIndicator: '#351024'
-                }
-            }
-        });
+<!doctype html>
 
-        // add the renderer
-        world.add( renderer );
-        // render on each step
-        world.on('step', function(){
-            world.render();
-        });
+<html lang="en">
 
-        // bounds of the window
-        var viewportBounds = Physics.aabb(0, 0, viewWidth, viewHeight);
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="js/jquery.min.js"/>
 
-        // constrain objects to these bounds
-        world.add(Physics.behavior('edge-collision-detection', {
-            aabb: viewportBounds,
-            restitution: 0.99,
-            cof: 0.99
-        }));
+		<!-- Optional theme -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymou --><!-- s"> -->
 
-        // add a circle
-        world.add(
-                Physics.body('circle', {
-                    x: 50, // x-coordinate
-                    y: 30, // y-coordinate
-                    vx: 0.2, // velocity in x-direction
-                    vy: 0.01, // velocity in y-direction
-                    radius: 20
-                })
-        );
+		<title>Gerome Pistre</title>
 
-        // ensure objects bounce when edge collision is detected
-        world.add( Physics.behavior('body-impulse-response') );
+	</head>
 
-        // add some gravity
-        world.add( Physics.behavior('constant-acceleration') );
+	<body>
 
-        // subscribe to ticker to advance the simulation
-        Physics.util.ticker.on(function( time, dt ){
+		<div class="navbar navbar-inverse navbar-static-top">
+			<div class = "container">
+				<div class="navbar-brand">gpistre.github.io</div>
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						
+					</button>
 
-            world.step( time );
-        });
+					<div class="collapse navbar-collapse navHeaderCollapse">
+						
+						<ul class= "nav navbar-nav navbar-right">
+							<li class="active"><a href="index.html">Work</a></li>
+							<li><a href="assets/cvShort.pdf">About</a></li>
+						</ul>
 
-        // start the ticker
-        Physics.util.ticker.start();
+					</div>	
+			</div>
+		</div>
 
-    });
-</script>
-</body>
+		<div class = "container">
+		
+			<div class="row">
+				<div class="col-xm-12">
+					<h1 class="text-center"><br>Experiments by Gerome Pistre<br></h1>
+					<!-- <p class="lead">This is a leading paragraph</p> -->
+					<p class="col-md-2"><p>
+					<p class="col-md-8 text-justify">
+						This website (started in June 2016) will contain various ramblings and thoughts
+						on subjects that I am passionate about, namely, and not in an order of
+						any kind, sustainable development and energy, programming, China, machine learning and data science.
+					</p>
+					<p class="col-md-2"><p>
+				</div>
+			</div>
+
+			<div class = "row">
+  				<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                    <a href=https://gpistre.github.io/Beijing.html><img src="img/beijing.jpg"></a>
+  					<a href=https://gpistre.github.io/Beijing.html><h4> Pollution in Beijing</h4></a>
+  				</div>
+
+ 	 			<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+ 	 				<img src="img/paint-your-flower.jpg">
+  					<a href="https://gpistre.github.io/EquationsOfNature.html"><h4>The Equations of Nature</h4></a>
+ 	 			</div>
+
+ 	 			<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+ 	 				<img src="img/sea-travel.jpg">
+  					<a href="https://gpistre.github.io/SeaTravel.html"><h4>200 Years of Sea Travel</h4></a>
+ 	 			</div>
+			</div>
+		</div>
+		
+		<!-- <div class="navbar navbar-default navbar-static-bottom">
+			<div class="container">
+				<p class="navbar-text pull-middle">Site Built by Little Fat Oyster</p>
+			</div>
+		</div> -->
+
+		<div id="footer">
+  			<div class="container text-center">
+    			<p class="text-muted">Created by <a href="http://www.cargocollective.com/siyucao">Little Fat Oyster</a></p>
+			  </div>
+		</div>
+
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+		
+
+		
+	</body>
 </html>
